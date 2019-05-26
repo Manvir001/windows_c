@@ -35,5 +35,19 @@ namespace windows_c
             this.Hide();
             obj.Show();
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            Form1 obj = new Form1();
+            this.Hide();
+            obj.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            advanced_settings obj = new advanced_settings();
+            this.Hide();
+            obj.Show();
+        }
     }
 }

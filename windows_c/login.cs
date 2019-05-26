@@ -18,7 +18,7 @@ namespace windows_c
             InitializeComponent();
         }
 
-        MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=workito_db");
+        MySqlConnection con = new MySqlConnection("server=mysql02.fastname.no;user id=d304238;password=2b9affd9; database=d304238");
         MySqlCommand cmd;
         MySqlDataReader dr;
 

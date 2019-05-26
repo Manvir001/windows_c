@@ -75,11 +75,17 @@
     <Compile Include="finn_bruker.Designer.cs">
       <DependentUpon>finn_bruker.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="advanced_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advanced_settings.Designer.cs">
+      <DependentUpon>advanced_settings.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -98,8 +104,11 @@
     <EmbeddedResource Include="finn_bruker.resx">
       <DependentUpon>finn_bruker.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advanced_settings.resx">
+      <DependentUpon>advanced_settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
