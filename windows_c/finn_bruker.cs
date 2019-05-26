@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +16,27 @@ namespace windows_c
         public finn_bruker()
         {
             InitializeComponent();
+            Fillcombo();
         }
 
-        
+        MySqlConnection con = new MySqlConnection("server=mysql02.fastname.no;user id=d304238;persistsecurityinfo=True;database=d304238;password=2b9affd9");
+        MySqlCommand cmd;
+        MySqlDataReader dr;
+
+        void Fillcombo()
+        {
+            string Sql = "SELECT firstname FROM user";
+            MySqlConnection con = new MySqlConnection("server=mysql02.fastname.no;user id=d304238;persistsecurityinfo=True;database=d304238;password=2b9affd9");
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(Sql, con);
+            MySqlDataReader DR = cmd.ExecuteReader();
+
+            while (DR.Read())
+            {
+                comboBox1.Items.Add(DR[0]);
+
+            }
+        }
 
         private void SøkLabel_Click(object sender, EventArgs e)
         {
@@ -48,6 +67,11 @@ namespace windows_c
             advanced_settings obj = new advanced_settings();
             this.Hide();
             obj.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

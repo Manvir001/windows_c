@@ -18,11 +18,11 @@ namespace windows_c
             InitializeComponent();
         }
 
-        MySqlConnection con = new MySqlConnection("server=mysql02.fastname.no;user id=d304238;password=2b9affd9; database=d304238");
-        MySqlCommand cmd;
-        MySqlDataReader dr;
+        //MySqlConnection con = new MySqlConnection("server=mysql02.fastname.no;user id=d304238;password=2b9affd9; database=d304238");
+        //MySqlCommand cmd;
+        //MySqlDataReader dr;
 
-        private String getUsername()
+        /*private String getUsername()
         {
             //fetch data from the database
             con.Open();
@@ -45,16 +45,16 @@ namespace windows_c
             String temp = dr[0].ToString();
             con.Close();
             return temp;
-        }
+        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
-            getUsername();
-            String Uname = getUsername(), Upass = getPassword(), name, password;
-            name = textBox1.Text;
-            password = textBox2.Text;
+            MySqlConnection con = new MySqlConnection("user id=d304238;server=mysql02.fastname.no;database=d304238;persistsecurityinfo=True;password=2b9affd9");
+            MySqlDataAdapter mda = new MySqlDataAdapter("Select count(*) From user Where id ='" + textBox2.Text + "' and password ='" + textBox1.Text + "'", con);
+            DataTable dt = new DataTable();
+            mda.Fill(dt);
 
-            if (name.Equals(Uname) && password.Equals(Upass))
+            if (dt.Rows[0][0].ToString() != "1")
             {
                 //login
                 label4.Hide();
