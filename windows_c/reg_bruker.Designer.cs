@@ -152,7 +152,7 @@
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(121, 42);
             this.Button1.TabIndex = 26;
-            this.Button1.Text = "Register Bruker";
+            this.Button1.Text = "Register Employee";
             this.Button1.UseVisualStyleBackColor = true;
             this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -162,7 +162,7 @@
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(121, 44);
             this.Button2.TabIndex = 27;
-            this.Button2.Text = "Finn Bruker";
+            this.Button2.Text = "Find Employee";
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
