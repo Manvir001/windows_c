@@ -169,5 +169,10 @@ namespace windows_c
             this.Hide();
             obj.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

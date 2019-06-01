@@ -165,5 +165,15 @@ namespace windows_c
             this.Hide();
             obj.Show();
         }
+
+        private void DepartmentLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoleDescriptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

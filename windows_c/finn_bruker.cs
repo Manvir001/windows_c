@@ -92,5 +92,10 @@ namespace windows_c
             this.Hide();
             obj.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

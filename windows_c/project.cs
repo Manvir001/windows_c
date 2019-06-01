@@ -105,5 +105,15 @@ namespace windows_c
                 DescriptionText.Text = "";
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
