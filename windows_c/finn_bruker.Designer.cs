@@ -35,18 +35,19 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button5
             // 
-            this.Button5.BackgroundImage = global::windows_c.Properties.Resources.Pensive_Parakeet;
-            this.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button5.Font = new System.Drawing.Font("Lucida Calligraphy", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Button5.Location = new System.Drawing.Point(-1, 0);
+            this.Button5.Location = new System.Drawing.Point(-2, 0);
+            this.Button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(365, 90);
+            this.Button5.Size = new System.Drawing.Size(548, 138);
             this.Button5.TabIndex = 14;
             this.Button5.Text = "WORKITO";
             this.Button5.UseVisualStyleBackColor = true;
@@ -56,10 +57,10 @@
             // 
             this.SøkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SøkLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.SøkLabel.Image = global::windows_c.Properties.Resources.Pensive_Parakeet;
-            this.SøkLabel.Location = new System.Drawing.Point(218, 115);
+            this.SøkLabel.Location = new System.Drawing.Point(327, 177);
+            this.SøkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SøkLabel.Name = "SøkLabel";
-            this.SøkLabel.Size = new System.Drawing.Size(91, 38);
+            this.SøkLabel.Size = new System.Drawing.Size(136, 58);
             this.SøkLabel.TabIndex = 16;
             this.SøkLabel.Text = "Employees List:";
             this.SøkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -67,9 +68,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(40, 96);
+            this.button1.Location = new System.Drawing.Point(60, 148);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 42);
+            this.button1.Size = new System.Drawing.Size(162, 65);
             this.button1.TabIndex = 22;
             this.button1.Text = "Register Employee";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,27 +79,31 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(40, 163);
+            this.button2.Location = new System.Drawing.Point(60, 251);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 43);
+            this.button2.Size = new System.Drawing.Size(162, 66);
             this.button2.TabIndex = 23;
             this.button2.Text = "Find Employee";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(40, 228);
+            this.button3.Location = new System.Drawing.Point(60, 351);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 42);
+            this.button3.Size = new System.Drawing.Size(162, 65);
             this.button3.TabIndex = 24;
             this.button3.Text = "Projects";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(40, 293);
+            this.button4.Location = new System.Drawing.Point(60, 451);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 43);
+            this.button4.Size = new System.Drawing.Size(162, 66);
             this.button4.TabIndex = 34;
             this.button4.Text = "Advance Settings";
             this.button4.UseVisualStyleBackColor = true;
@@ -106,18 +112,33 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(351, 132);
+            this.comboBox1.Location = new System.Drawing.Point(526, 203);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(333, 21);
+            this.comboBox1.Size = new System.Drawing.Size(498, 28);
             this.comboBox1.TabIndex = 35;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Black;
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(1145, 41);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(101, 65);
+            this.button6.TabIndex = 46;
+            this.button6.Text = "Log Out";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
             // finn_bruker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::windows_c.Properties.Resources.Pensive_Parakeet;
-            this.ClientSize = new System.Drawing.Size(1017, 561);
+            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.ClientSize = new System.Drawing.Size(1526, 863);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -125,8 +146,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SøkLabel);
             this.Controls.Add(this.Button5);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "finn_bruker";
             this.Text = "finn_bruker";
+            this.Load += new System.EventHandler(this.Finn_bruker_Load);
             this.ResumeLayout(false);
 
         }
@@ -140,5 +163,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.Button button6;
     }
 }

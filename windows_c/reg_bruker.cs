@@ -108,6 +108,13 @@ namespace windows_c
             {
                 dataCommand.Connection.Close();
             }
+            //textbox clear
+            FirstNameBox.Text = "";
+            LastnameBox.Text = "";
+            EmailBox.Text = "";
+            PassBox2.Text = "";
+            comboBox1.Text = "";
+            comboBox2.Text = "";
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,12 +151,21 @@ namespace windows_c
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            
+            project obj = new project();
+            this.Hide();
+            obj.Show();
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
             Form1 obj = new Form1();
+            this.Hide();
+            obj.Show();
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            login obj = new login();
             this.Hide();
             obj.Show();
         }
