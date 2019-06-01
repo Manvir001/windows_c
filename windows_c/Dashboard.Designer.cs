@@ -40,44 +40,40 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(55, 177);
-            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button1.Location = new System.Drawing.Point(41, 144);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(162, 52);
-            this.Button1.TabIndex = 14;
+            this.Button1.Size = new System.Drawing.Size(122, 42);
+            this.Button1.TabIndex = 0;
             this.Button1.Text = "Register Employee";
             this.Button1.UseVisualStyleBackColor = true;
             this.Button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(274, 177);
-            this.Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button2.Location = new System.Drawing.Point(206, 144);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(162, 52);
-            this.Button2.TabIndex = 15;
-            this.Button2.Text = "Find User";
+            this.Button2.Size = new System.Drawing.Size(122, 42);
+            this.Button2.TabIndex = 1;
+            this.Button2.Text = "Find Employees";
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(484, 177);
-            this.Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button3.Location = new System.Drawing.Point(363, 144);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(162, 52);
-            this.Button3.TabIndex = 16;
+            this.Button3.Size = new System.Drawing.Size(122, 42);
+            this.Button3.TabIndex = 2;
             this.Button3.Text = "Projects";
             this.Button3.UseVisualStyleBackColor = true;
             this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(703, 175);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(527, 142);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 53);
-            this.button4.TabIndex = 17;
+            this.button4.Size = new System.Drawing.Size(122, 43);
+            this.button4.TabIndex = 3;
             this.button4.Text = "Advance Settings";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -85,9 +81,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(55, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 34);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(563, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(422, 82);
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
@@ -95,27 +92,26 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Black;
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(1178, 42);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(884, 34);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(139, 69);
-            this.button6.TabIndex = 49;
+            this.button6.Size = new System.Drawing.Size(104, 56);
+            this.button6.TabIndex = 4;
             this.button6.Text = "Log Out";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1356, 690);
+            this.ClientSize = new System.Drawing.Size(1017, 561);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Form1_Load);

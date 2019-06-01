@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace windows_c
 {
-    public partial class reg_bruker : Form
+    public partial class edit_user : Form
     {
-        public reg_bruker()
+        public edit_user()
         {
             InitializeComponent();
             Fillcombo();
@@ -59,7 +59,7 @@ namespace windows_c
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            finn_bruker  obj = new finn_bruker();
+            finn_bruker obj = new finn_bruker();
             this.Hide();
             obj.Show();
         }
@@ -119,7 +119,7 @@ namespace windows_c
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void PassBox2_TextChanged(object sender, EventArgs e)
@@ -129,7 +129,7 @@ namespace windows_c
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -173,6 +173,34 @@ namespace windows_c
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            reg_bruker obj = new reg_bruker();
+            this.Hide();
+            obj.Show();
+        }
+
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
+            finn_bruker obj = new finn_bruker();
+            this.Hide();
+            obj.Show();
+        }
+
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
+            project obj = new project();
+            this.Hide();
+            obj.Show();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            advanced_settings obj = new advanced_settings();
+            this.Hide();
+            obj.Show();
         }
 
         private void button6_Click_1(object sender, EventArgs e)

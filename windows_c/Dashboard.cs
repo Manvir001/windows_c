@@ -67,5 +67,12 @@ namespace windows_c
             this.Hide();
             obj.Show();
         }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            login obj = new login();
+            this.Hide();
+            obj.Show();
+        }
     }
 }

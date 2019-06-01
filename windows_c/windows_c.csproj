@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="edit_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_user.Designer.cs">
+      <DependentUpon>edit_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="finn_bruker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <Compile Include="reg_bruker.Designer.cs">
       <DependentUpon>reg_bruker.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="edit_user.resx">
+      <DependentUpon>edit_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="finn_bruker.resx">
       <DependentUpon>finn_bruker.cs</DependentUpon>
     </EmbeddedResource>
