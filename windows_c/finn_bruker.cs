@@ -25,7 +25,7 @@ namespace windows_c
 
         void Fillcombo()
         {
-            string Sql = "SELECT firstname FROM user";
+            string Sql = "SELECT firstname, lastname FROM user";
             MySqlConnection con = new MySqlConnection("server=mysql02.fastname.no;user id=d304238;persistsecurityinfo=True;database=d304238;password=2b9affd9");
             con.Open();
             MySqlCommand cmd = new MySqlCommand(Sql, con);
@@ -93,8 +93,37 @@ namespace windows_c
             obj.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button7_Click(object sender, EventArgs e)
         {
+             {
+                        con.Open();
+                        MySqlCommand cmd = con.CreateCommand();
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = "delete FROM user WHERE firstname='" + comboBox1.SelectedItem + "'";
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+
+                        MessageBox.Show("Record deleted successfully");
+                    }
+            //textbox clear
+          
+            comboBox1.Text = "";
+            
+
+        }
+
+        private void Button8_Click(object sender, EventArgs e)
+        {
+            {
+                con.Open();
+                MySqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update user set firstname='" + comboBox1.SelectedItem + "'";
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Record updated successfully");
+            }
 
         }
     }
