@@ -50,11 +50,11 @@ namespace windows_c
         private void button1_Click(object sender, EventArgs e)
         {
             MySqlConnection con = new MySqlConnection("user id=d304238;server=mysql02.fastname.no;database=d304238;persistsecurityinfo=True;password=2b9affd9");
-            MySqlDataAdapter mda = new MySqlDataAdapter("Select count(*) From user Where id ='" + textBox2.Text + "' and password ='" + textBox1.Text + "'", con);
+            MySqlDataAdapter mda = new MySqlDataAdapter("Select count(*) From user Where id ='" + textBox1.Text + "' and password ='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             mda.Fill(dt);
 
-            if (dt.Rows[0][0].ToString() != "1")
+            if (dt.Rows[0][0].ToString() == "1")
             {
                 //login
                 label4.Hide();
