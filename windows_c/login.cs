@@ -54,7 +54,7 @@ namespace windows_c
             DataTable dt = new DataTable();
             mda.Fill(dt);
 
-            if (dt.Rows[0][0].ToString() != "")
+            if (dt.Rows[0][0].ToString() != "1")
             {
                 //login
                 label4.Hide();
