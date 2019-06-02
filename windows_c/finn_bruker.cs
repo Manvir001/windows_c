@@ -192,6 +192,11 @@ namespace windows_c
                 con.Close();
 
                 MessageBox.Show("Record updated successfully");
+                FirstNameBox.Text = "";
+                LastnameBox.Text = "";
+                PassBox2.Text = "";
+                EmailBox.Text = "";
+
             }
 
         }

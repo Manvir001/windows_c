@@ -24,7 +24,7 @@ namespace windows_c
 
         /*private String getUsername()
         {
-            //fetch data from the database
+            fetch data from the database
             con.Open();
             String syntax = "SELECT id FROM user";
             cmd = new MySqlCommand(syntax, con);
@@ -36,7 +36,7 @@ namespace windows_c
         }
         private String getPassword()
         {
-            //fetch data from the database
+            fetch data from the database
             con.Open();
             String syntax = "SELECT password FROM user";
             cmd = new MySqlCommand(syntax, con);
@@ -54,7 +54,7 @@ namespace windows_c
             DataTable dt = new DataTable();
             mda.Fill(dt);
 
-            if (dt.Rows[0][0].ToString() != "1")
+            if (dt.Rows[0][0].ToString() != "")
             {
                 //login
                 label4.Hide();

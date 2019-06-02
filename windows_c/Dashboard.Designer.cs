@@ -54,7 +54,7 @@
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(122, 42);
             this.Button2.TabIndex = 1;
-            this.Button2.Text = "Find Employees";
+            this.Button2.Text = "Edit/Delete Employee";
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -85,6 +85,7 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(422, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
