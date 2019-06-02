@@ -63,7 +63,7 @@ namespace windows_c
                // dataCommand.Parameters.AddWithValue("@PermissionNameText", this.PermissionNameText.Text);
                 dataCommand.ExecuteNonQuery();
                 transakcija.Commit();
-                MessageBox.Show("Registration Successfull");
+                MessageBox.Show("Department is successfully registered");
             }
             catch (Exception eks)
             {
@@ -130,7 +130,7 @@ namespace windows_c
                 // dataCommand.Parameters.AddWithValue("@PermissionNameText", this.PermissionNameText.Text);
                 dataCommand.ExecuteNonQuery();
                 transakcija.Commit();
-                MessageBox.Show("Registration Successfull");
+                MessageBox.Show("Role is successfully registered");
             }
             catch (Exception eks)
             {
@@ -174,6 +174,13 @@ namespace windows_c
         private void RoleDescriptionLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 obj = new Form1();
+            this.Hide();
+            obj.Show();
         }
     }
 }

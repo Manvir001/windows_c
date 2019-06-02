@@ -88,7 +88,7 @@ namespace windows_c
                     
                     dataCommand.ExecuteNonQuery();
                     transakcija.Commit();
-                    MessageBox.Show("Registration Successfull");
+                    MessageBox.Show("New project is registered successfully");
                 }
                 catch (Exception eks)
                 {
@@ -119,6 +119,13 @@ namespace windows_c
         private void button6_Click_1(object sender, EventArgs e)
         {
             login obj = new login();
+            this.Hide();
+            obj.Show();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 obj = new Form1();
             this.Hide();
             obj.Show();
         }

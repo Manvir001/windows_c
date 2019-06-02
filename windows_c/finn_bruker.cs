@@ -207,5 +207,12 @@ namespace windows_c
             this.Hide();
             obj.Show();
         }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 obj = new Form1();
+            this.Hide();
+            obj.Show();
+        }
     }
 }

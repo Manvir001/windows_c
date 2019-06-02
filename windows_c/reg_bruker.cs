@@ -85,13 +85,13 @@ namespace windows_c
             dataCommand.Transaction = transakcija;
             try
             {
-                dataCommand.CommandText = "Insert INTO user (firstname, lastname, email, password, Department_name, Role_name ) VALUES (@firstname, @lastname, @email, @password, @Department_name, @Role_name)";
-                //dataCommand.CommandText = "Insert INTO user (username, password ) VALUES (@username, @password)";
+                dataCommand.CommandText = "Insert INTO user (firstname, lastname, email, password, Department_name, Role_name ) " +
+                    "VALUES (@firstname, @lastname, @email, @password, @Department_name, @Role_name)";
+               
                 dataCommand.CommandType = CommandType.Text;
                 dataCommand.Parameters.AddWithValue("@firstname", this.FirstNameBox.Text);
                 dataCommand.Parameters.AddWithValue("@lastname", this.LastnameBox.Text);
                 dataCommand.Parameters.AddWithValue("@email", this.EmailBox.Text);
-                //dataCommand.Parameters.AddWithValue("@username", this.UsernameTextBox.Text);
                 dataCommand.Parameters.AddWithValue("@password", this.PassBox2.Text);
                 dataCommand.Parameters.AddWithValue("@Department_name", this.comboBox1.Text);
                 dataCommand.Parameters.AddWithValue("@Role_name", this.comboBox2.Text);
@@ -172,7 +172,9 @@ namespace windows_c
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Form1 obj = new Form1();
+            this.Hide();
+            obj.Show();
         }
 
         private void button6_Click_1(object sender, EventArgs e)
